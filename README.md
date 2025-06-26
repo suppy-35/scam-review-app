@@ -25,23 +25,8 @@ A beautiful 3D-inspired scam review web app where users can safely report scam i
 
 ## 📦 Folder Structure
 
-scam-review-app/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+🔗 Click here to open your project live!
+✅ Hosted using GitHub Pages
+💻 Can be opened on desktop & mobile
+🦄 Magical & working beautifully now!
 
-yaml
-Copy
-Edit
-
----
-
-## 🚀 How to Run
-
-1. **Clone the repo** (for local setup):
-   ```bash
-   git clone https://github.com/suppy-35/scam-review-app.git
-   cd scam-review-app
-🌍 Live Demo
-👉 Click to View Live Unicorn App
