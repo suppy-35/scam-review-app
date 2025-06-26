@@ -23,10 +23,11 @@ A beautiful 3D-inspired scam review web app where users can safely report scam i
 
 ---
 
-## 📦 Folder Structure
+## 🔗 Live Demo
 
-🔗 Click here to open your project live!
-✅ Hosted using GitHub Pages
-💻 Can be opened on desktop & mobile
-🦄 Magical & working beautifully now!
+👉 [Click to open Scam Review App](https://suppy-35.github.io/scam-review-app/)
+
+---
+
+## 📦 Folder Structure
 
