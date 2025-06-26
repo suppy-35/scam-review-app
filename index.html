@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🦄 Scam Review Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>✨ Scam Review Portal 🦄</h1>
+    <div class="btns">
+      <button onclick="signupUser()">Signup</button>
+      <button onclick="loginUser()">Login</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="glass" id="review-form">
+      <h2>🌈 Submit a Magical Scam Review</h2>
+      <form>
+        <input type="text" id="username" placeholder="👩 Your Name" required />
+        <textarea id="scam-details" placeholder="💬 Scam Details" required></textarea>
+        <select id="category">
+          <option value="Job Scam">💼 Job Scam</option>
+          <option value="Financial Fraud">💰 Financial Fraud</option>
+          <option value="Fake Sales">🛒 Fake Sales</option>
+          <option value="Other">🌐 Other</option>
+        </select>
+        <div class="star-rating">
+          <label>⭐ Severity:</label>
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+          <input type="hidden" id="rating" value="3" />
+        </div>
+        <button type="submit">✨ Submit Review</button>
+      </form>
+    </section>
+
+    <section class="glass" id="reviews">
+      <h2>📋 Scam Reports</h2>
+      <select id="category-filter" onchange="loadReviews()">
+        <option value="All">All Categories</option>
+        <option value="Job Scam">Job Scam</option>
+        <option value="Financial Fraud">Financial Fraud</option>
+        <option value="Fake Sales">Fake Sales</option>
+        <option value="Other">Other</option>
+      </select>
+      <div id="review-container"></div>
+    </section>
+
+    <section class="glass" id="dashboard">
+      <h2>📊 Scam Dashboard</h2>
+      <div class="stats">
+        <div class="stat-box"><h3>Total Reports</h3><p id="total-reports">0</p></div>
+        <div class="stat-box"><h3>Top Scam Type</h3><p id="top-category">Loading...</p></div>
+        <div class="stat-box"><h3>Average Rating</h3><p id="avg-rating">0</p></div>
+      </div>
+
+      <h3>🔎 Recent Reports</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Severity</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody id="report-list"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
